@@ -328,5 +328,3 @@ pear install Net_SMTP
 status "Installing Semantic MediaWiki"
 curl -sS https://getcomposer.org/installer | php
 php composer.phar require mediawiki/semantic-media-wiki "~1.9"
-cd /app/wiki/
-php maintenance/update.php
