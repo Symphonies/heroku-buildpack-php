@@ -324,3 +324,8 @@ status "Installing Pear packages"
 # ln -s /app/php/bin/php bin/phpa
 pear install mail
 pear install Net_SMTP
+
+status "Installing Semantic MediaWiki"
+php composer.phar require mediawiki/semantic-media-wiki "~1.9"
+cd /app/wiki/
+php maintenance/update.php
